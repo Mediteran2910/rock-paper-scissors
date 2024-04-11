@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="/boilerplates/homepage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <title>Rock, Paper, Scissors</title>
+
+ </head>
+<body>
+  <header>
+    <section class="header-wrapper">
+  <h1>Rock <br> paper <br> scissors</h1>
+  <div class="score-wrapper">
+    <p>Score</p>
+    <p id="result"><%= score %></p>
+  </div>
+</section>
+</header>
+<main>
+<section class="playing-buttons-wrapper">
+  <a href="/homepage/game/paper" id="paper">
+  <img src="/images/icon-paper.svg" alt="paper icon">
+</a>
+<a href="/homepage/game/scissors" id="scissors">
+  <img src="/images/icon-scissors.svg" alt="scissors icon">
+</a>
+<a href="/homepage/game/rock" id="rock">
+  <img src="/images/icon-rock.svg" alt="rock icon">
+</a>
+</section>
+</main>
+<footer>
+  <a href="/homepage/rules">
+    <button id="rules">Rules</button>
+  </a>
+
+</footer>
+
+</article>
+</body>
+</html>
