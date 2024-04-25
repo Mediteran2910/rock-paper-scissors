@@ -37,17 +37,17 @@ app.get('/homepage/rules', (req,res) =>{
 
 })
 
-app.get('/homepage/game/paper', (req, res) => {
+app.get('/homepage/paper', (req, res) => {
     const { score, computerChoice, roundResult } = handleChoice('paper', req.session);
     res.render('paper.ejs', { score, computerChoice, roundResult });
 });
 
-app.get('/homepage/game/rock', (req,res) =>{
+app.get('/homepage/rock', (req,res) =>{
     const {score, computerChoice, roundResult} = handleChoice('rock', req.session);
     res.render('rock.ejs', { score, computerChoice, roundResult})
 }
 )
-app.get('/homepage/game/scissors', (req,res) =>{
+app.get('/homepage/scissors', (req,res) =>{
     const {score, computerChoice, roundResult} = handleChoice('scissors', req.session);
     res.render('scissors.ejs', { score, computerChoice, roundResult})
 })
